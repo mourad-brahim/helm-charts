@@ -382,7 +382,7 @@ spec:
 {{ if .Values.keystore }}
           - name: keystore
             mountPath: /usr/share/elasticsearch/config/elasticsearch.keystore
-            subPath: elasticsearch.keystore
+            #subPath: elasticsearch.keystore
 {{ end }}
           {{- range .Values.secretMounts }}
           - name: {{ .name }}
